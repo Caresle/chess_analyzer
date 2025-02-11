@@ -8,7 +8,7 @@ const AboutCard = ({
 	children?: React.ReactNode
 }) => {
 	return (
-		<div className="bg-white p-2 rounded-lg border w-full">
+		<div className="bg-black p-2 rounded-lg border w-full">
 			<h3 className="font-semibold text-center">{header}</h3>
 			<p className="text-slate-500 text-center">{children}</p>
 		</div>
@@ -17,7 +17,7 @@ const AboutCard = ({
 
 export default function AboutSection() {
 	return (
-		<section className="w-full bg-slate-100 p-2">
+		<section className="w-full p-2">
 			<h2 className="font-semibold text-xl text-center">About</h2>
 			<div className="grid grid-cols-1 w-full place-items-center gap-2 sm:grid-cols-2 md:grid-cols-3 max-w-4xl mx-auto">
 				<AboutCard header="What is Chess Analyzer?">

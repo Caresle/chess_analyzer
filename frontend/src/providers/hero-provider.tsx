@@ -5,5 +5,9 @@ export default function HeroProvider({
 }: {
 	children: React.ReactNode
 }) {
-	return <HeroUIProvider>{children}</HeroUIProvider>
+	return (
+		<HeroUIProvider>
+			<div className="dark text-foreground bg-background">{children}</div>
+		</HeroUIProvider>
+	)
 }
