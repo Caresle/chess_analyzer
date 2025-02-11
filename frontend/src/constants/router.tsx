@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouteObject } from "react-router-dom"
 import HomePage from "../app/home"
+import LoginPage from "../app/login/page"
 
 export type RouteObjectWithMeta = RouteObject & {
 	meta?: {
@@ -21,7 +22,7 @@ const routesApp: RouteObjectWithMeta[] = [
 	},
 	{
 		path: "/login",
-		element: <div>Login Page</div>,
+		element: <LoginPage />,
 		meta: {
 			showInNavbar: false,
 		},
