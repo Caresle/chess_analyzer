@@ -1,6 +1,7 @@
 import { Tab, Tabs } from "@heroui/react"
 import Icons from "../../components/shared/icons"
 import SettingsSection from "./_components/settings-section"
+import SyncSection from "./_components/sync-section"
 
 export default function ProfilePage() {
 	return (
@@ -26,7 +27,7 @@ export default function ProfilePage() {
 						</div>
 					}
 				>
-					<p>SYNC</p>
+					<SyncSection />
 				</Tab>
 				<Tab
 					key="settings"
