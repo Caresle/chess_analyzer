@@ -2,12 +2,14 @@ import { Tab, Tabs } from "@heroui/react"
 import Icons from "../../components/shared/icons"
 import SettingsSection from "./_components/settings-section"
 import SyncSection from "./_components/sync-section"
+import GeneralSection from "./_components/general-section"
 
 export default function ProfilePage() {
 	return (
-		<div className="h-screen w-full p-2">
+		<div className="h-screen w-full p-2 flex flex-col overflow-y-auto">
 			<Tabs color="primary">
 				<Tab
+					className="flex-1 flex overflow-y-auto"
 					key="general"
 					title={
 						<div className="flex items-center gap-2">
@@ -16,7 +18,7 @@ export default function ProfilePage() {
 						</div>
 					}
 				>
-					<div className="w-full"></div>
+					<GeneralSection />
 				</Tab>
 				<Tab
 					key="sync"
